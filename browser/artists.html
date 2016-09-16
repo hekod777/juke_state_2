@@ -1,0 +1,16 @@
+
+      <div ng-controller="ArtistsCtrl">
+        <h3>Artists</h3>
+        <div class="row">
+          <div ng-repeat="artist in artists" class="col-xs-4">
+            <a class="thumbnail" ui-sref="artist({id:{{artist.id}}})">
+              <img ng-src="">
+              <div class="caption">
+                <h5>
+                  <span>{{artist.name}}</span>
+                </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
